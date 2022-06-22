@@ -1,0 +1,18 @@
+/****************************************************
+    文件：HideInPrefabInstancesAttributeExample.cs
+    作者：Olivia
+    日期：#CreateTime#
+    功能：属性所在的组件在预制体上，且预制体在为instance（在Hierarchy中）时，隐藏属性
+*****************************************************/
+
+using Sirenix.OdinInspector;
+using UnityEngine;
+
+namespace Game
+{
+    public class HideInPrefabInstancesAttributeExample : MonoBehaviour
+    {
+        [HideInPrefabInstances]
+        public GameObject HiddenInPrefabInstances;
+    }
+}
